@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiko Fan Page - ¡La primera en Español!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.0.18/24/outline/academic-cap.svg" rel="preload" as="image">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Un gris claro para el fondo general */
+        }
+        .taiko-red { background-color: #ef4444; } /* Rojo Taiko */
+        .taiko-red-text { color: #ef4444; }
+        .taiko-blue { background-color: #3b82f6; } /* Azul Taiko */
+        .taiko-blue-text { color: #3b82f6; }
+        .taiko-yellow { background-color: #f59e0b; } /* Amarillo Taiko */
+        .taiko-yellow-text { color: #f59e0b; }
+
+        /* Animación sutil para las tarjetas */
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Estilo para el banner principal */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x600.png?text=Taiko+Background+Image') no-repeat center center; /* Reemplaza con una imagen tuya */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://via.placeholder.com/50x50.png?text=🥁" alt="Logo Taiko Fan Central" class="h-10 w-10 mr-3">
+                    <a href="#" class="text-3xl font-extrabold taiko-red-text">Taiko<span class="taiko-blue-text">Fan</span><span class="taiko-yellow-text">Page</span></a>
+                </div>
+                <nav class="hidden md:flex space-x-2 lg:space-x-4 items-center">
+                    <a href="#canciones" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Canciones</a>
+                    <a href="#guias" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Guías y Técnicas</a>
+                    <a href="#personajes" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Personajes</a>
+                    <a href="#simulacion" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Simulación</a>
+                    <a href="#noticias" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Noticias</a>
+                    <a href="#comunidad" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Comunidad</a>
+                    <a href="#tambor-destacado" class="px-4 py-2 rounded-md text-sm font-bold taiko-red text-white hover:bg-red-700 transition duration-150">¡Mejor Tambor!</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden mt-3 space-y-1">
+                <a href="#canciones" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Canciones</a>
+                <a href="#guias" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Guías y Técnicas</a>
+                <a href="#personajes" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Personajes</a>
+                <a href="#simulacion" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Simulación</a>
+                <a href="#noticias" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Noticias</a>
+                <a href="#comunidad" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900">Comunidad</a>
+                <a href="#tambor-destacado" class="block px-3 py-2 rounded-md text-base font-bold taiko-red text-white hover:bg-red-700 transition duration-150">¡Mejor Tambor!</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+                ¡Domina el Ritmo, Vive la Pasión Taiko!
+            </h1>
+            <p class="text-lg md:text-2xl mb-8 font-light drop-shadow-md">
+                Tu destino número uno para todo sobre Taiko no Tatsujin. Desde guías y canciones hasta la comunidad más vibrante.
+            </p>
+        </div>
+    </section>
+
+    <section id="tambor-destacado" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold taiko-red-text">El Tambor Definitivo para el Verdadero Donder</h2>
+                <p class="text-gray-600 mt-2 text-lg">Mi recomendación personal para llevar tu juego al siguiente nivel.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center bg-gray-50 p-8 rounded-xl shadow-xl">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <img src="images\standrum.jpg" alt="Mejor Tambor Taiko" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Rythmagica TDC10 Pro Taiko Drum Controller </h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Este es el tambor que recomiendo. Su sensibilidad, durabilidad y precisión lo hacen ideal tanto para principiantes como para expertos. Siente cada golpe y mejora tus combos con este increíble periférico. Es muy portatil y fácil de configurar, lo que te permite jugar en cualquier lugar. 
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-1">
+                        <li>Aplicación para Android</li>
+                        <li>Materiales de alta calidad.</li>
+                        <li>Compatible con múltiples plataformas.</li>
+                        <li>Diseño sencillo pero funcional.</li>
+                    </ul>
+                    <a href="html\bestodrum.html" class="inline-block taiko-blue hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        Ver Analisis y Dónde Comprar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<main id="explorar" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Explora el Universo Taiko</h2>
+                <p class="text-gray-600 mt-2 text-lg">Todo lo que necesitas saber y más, en un solo lugar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <img src="images\sotw.png" alt="Lista de Canciones" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 taiko-red-text">Lista de Canciones</h3>
+                        <p class="text-gray-600 mb-4">Descubre y explora el vasto repertorio musical de Taiko no Tatsujin. Filtra por género, dificultad y versión del juego.</p>
+                        <a href="canciones.html" class="font-semibold taiko-blue-text hover:underline">Ver todas las canciones &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <img src="images\img_mv.jpg" alt="Cómo se Juega y Técnicas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 taiko-red-text">Cómo Jugar y Técnicas</h3>
+                        <p class="text-gray-600 mb-4">Desde los fundamentos para novatos hasta técnicas avanzadas para maestros del tambor. ¡Conviértete en un experto!</p>
+                        <a href="guias.html" class="font-semibold taiko-blue-text hover:underline">Aprender a Jugar &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <img src="images\pic_catch_01.png" alt="Personajes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 taiko-red-text">Personajes Entrañables</h3>
+                        <p class="text-gray-600 mb-4">Conoce a Don-chan, Katsu-chan y toda la pandilla. Descubre sus historias, habilidades y trajes especiales.</p>
+                        <a href="https://taiko.fandom.com/wiki/Category:Characters" class="font-semibold taiko-blue-text hover:underline">Conocer Personajes &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <img src="images\1500x500.jpg" alt="Simulación y TJA Player" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 taiko-red-text">Simulación y TJA Player</h3>
+                        <p class="text-gray-600 mb-4">Aprende a jugar en tu PC, crea tus propios charts con TJA Player y accede a la documentación completa.</p>
+                        <a href="Simuladores/index.html" class="font-semibold taiko-blue-text hover:underline">Explorar Guía de Simulación &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <img src="images\mv.jpg" alt="Noticias y Actualizaciones" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 taiko-yellow-text">Noticias y Novedades</h3>
+                        <p class="text-gray-600 mb-4">Mantente al día con los últimos lanzamientos, eventos, colaboraciones y todo lo nuevo en el mundo Taiko.</p>
+                        <a href="https://taiko-ch.net/index.php" class="font-semibold taiko-blue-text hover:underline">Ver Últimas Noticias &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <img src="images\fls.png" alt="Comunidad" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 taiko-yellow-text">Comunidad de Fans</h3>
+                        <p class="text-gray-600 mb-4">Conéctate con otros Donders, comparte tus logros, participa en foros y encuentra amigos para jugar.</p>
+                        <a href="https://discord.gg/Vy6zbDyg" class="font-semibold taiko-blue-text hover:underline">Unirse a la Comunidad &rarr;</a>
+                    </div>
+                </div>
+
+                 </div>
+        </div>
+    </section>
+
+    <section class="taiko-red py-16 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">¿Listo para llevar tu pasión al máximo?</h2>
+            <p class="text-lg mb-8">Únete a nuestra comunidad y no te pierdas nada del universo Taiko no Tatsujin.</p>
+            <a href="https://discord.gg/Vy6zbDyg" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                ¡Quiero Ser Parte!
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-3">TaikoFanCentral</h4>
+                    <p class="text-sm">Tu web de referencia para Taiko no Tatsujin. Hecha por un fan, para fans.</p>
+                    <div class="mt-4 flex space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">...</svg></a> <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">...</svg></a> <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">...</svg></a> </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#canciones" class="hover:text-white hover:underline">Lista de Canciones</a></li>
+                        <li><a href="#guias" class="hover:text-white hover:underline">Guías y Tutoriales</a></li>
+                        <li><a href="#simulacion" class="hover:text-white hover:underline">Simuladores y TJA</a></li>
+                        <li><a href="#noticias" class="hover:text-white hover:underline">Noticias</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacidad.html" class="hover:text-white hover:underline">Política de Privacidad</a></li>
+                        <li><a href="terminos.html" class="hover:text-white hover:underline">Términos de Servicio</a></li>
+                        <li><a href="contacto.html" class="hover:text-white hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; <span id="currentYear"></span> TaikoFanPage. Todos los derechos reservados.</p>
+                <p>Taiko no Tatsujin y todos los personajes relacionados son marcas registradas de Bandai Namco Entertainment Inc.</p>
+                <p class="mt-2">Diseñado con ❤️ y mucho ritmo xdddddd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Actualizar año en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Pequeña animación para el logo al cargar (opcional)
+        // window.addEventListener('load', () => {
+        //     const logo = document.querySelector('header a:first-child');
+        //     if(logo) {
+        //         logo.style.transform = 'scale(0.9)';
+        //         setTimeout(() => {
+        //             logo.style.transition = 'transform 0.5s ease-out';
+        //             logo.style.transform = 'scale(1)';
+        //         }, 100);
+        //     }
+        // });
+
+    </script>
+</body>
+</html>

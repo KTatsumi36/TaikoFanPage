@@ -1,0 +1,194 @@
+    :root {
+        --primary: #ff4500;
+        --primary-dark: #d13a00;
+        --secondary: #232946;
+        --background: #f4f4f8;
+        --white: #fff;
+        --gray: #e5e5e5;
+        --accent: #eebbc3;
+}
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: var(--background);
+            margin: 0;
+            padding: 0;
+            color: var(--secondary);
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            text-align: center;
+            padding: 2.5rem 1rem 1.5rem 1rem;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        }
+        header h1 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.6rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        .container {
+    max-width: 900px;
+    margin: -40px auto 40px auto; /* <-- este -40px sube el contenedor y tapa parte del header */
+            padding: 40px 30px 30px 30px;
+            background: var(--white);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+            position: relative;
+            z-index: 1;
+        }
+        h2 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 0.7em;
+            font-size: 1.7rem;
+            border-left: 6px solid var(--primary);
+            padding-left: 12px;
+            background: linear-gradient(90deg, #fff, #ffe5dc 80%);
+            border-radius: 6px;
+        }
+        h3 {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-bottom: 0.5em;
+        }
+        ul, ol {
+            margin: 0 0 0.5em 1.0em;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5em;
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 2.5em;
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid var(--gray);
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .comparativa {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: #fafafa;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .comparativa th, .comparativa td {
+            border: 1px solid var(--gray);
+            padding: 12px 8px;
+            text-align: center;
+        }
+        .comparativa th {
+            background: var(--primary);
+            color: var(--white);
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+        .comparativa tr:nth-child(even) td {
+            background: #f9f9f9;
+        }
+        .comparativa tr:hover td {
+            background: #ffe5dc;
+        }
+        strong {
+            color: var(--primary-dark);
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: var(--secondary);
+            color: var(--white);
+            font-size: 1.1em;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            box-shadow: 0 -4px 24px rgba(0,0,0,0.10);
+            margin-top: 40px;
+        }
+        .drum-img {
+    max-width: 350px;   
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 24px auto;
+        }
+        /* Botón de acción */
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            padding: 0.7em 2em;
+            border: none;
+            border-radius: 24px;
+            font-size: 1.1em;
+            margin: 1em 0;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px) scale(1.03);
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 18px 5vw 18px 5vw;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            .comparativa th, .comparativa td {
+                font-size: 0.95em;
+                padding: 7px 2px;
+            }
+        }
+     @font-face {
+        font-family: 'DomCasualD';
+        src: url('../fonts/DomCasualD.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'DomCasualDBold';
+        src: url('../fonts/DomCasualDBold.ttf') format('truetype');
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: 'DomCasualDBoldItalic';
+        src: url('../fonts/DomCasualDBoldItalic.ttf') format('truetype');
+        font-weight: bold;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'DomCasualDItalic';
+        src: url('../fonts/DomCasualDItalic.ttf') format('truetype');
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'FOT-Seurat_Pro';
+        src: url('../fonts/FOT-Seurat_Pro.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'Nijiiro';
+        src: url('../fonts/Nijiiro-font.otf') format('opentype');
+    }
+
+    /* Apply your preferred font as the main font */
+    body {
+        font-family: 'DomCasualD', 'FOT-Seurat_Pro', 'Nijiiro', Arial, sans-serif;
+    }
+    header h1,
+    h2 {
+        font-family: 'DomCasualDBold', 'DomCasualD', 'FOT-Seurat_Pro', 'Nijiiro', Arial, sans-serif;
+    }
+    /* If you want to use other variants for italic/bold, add them as needed */
